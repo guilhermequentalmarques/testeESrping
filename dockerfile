@@ -7,4 +7,4 @@ FROM openjdk:17-jdk-slim
 
 COPY --from=build /target/0.0.1-SNAPSHOT-teste.jar app.jar
 EXPOSE 8081
-ENTRYPOINT["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
